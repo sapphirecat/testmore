@@ -222,8 +222,9 @@ function cmp_ok($this, $operator, $that, $test_name = '')
     ok($pass, $test_name);
 
     if (!$pass) {
+        $_op = trim($operator);
         diag("         got: $_this");
-        diag("    expected: $_that");
+        diag("    expected: $_op $_that");
     }
 
     return $pass;
