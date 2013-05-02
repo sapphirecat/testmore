@@ -108,12 +108,12 @@ function ok($pass, $test_name = '')
     global $_num_skips;
     global $_testmore_todo;
 
-    $_test_num++; 
-
     if ($_num_skips) {
         $_num_skips--;
         return TRUE;
     }
+
+    $_test_num++;
 
     if (!empty($test_name) && $test_name[0] != '#') {
         $test_name = "- $test_name";
