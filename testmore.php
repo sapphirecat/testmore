@@ -319,6 +319,13 @@ function skip($message, $num)
     $_num_skips = $num;
 }
 
+function bail_out($message = '')
+{
+    $sp = strlen((string) $message) ? ' ' : '';
+    echo "Bail out!$sp$message\n";
+    exit(1);
+}
+
 function is_deeply($got_struct, $expected_struct, $test_name = '')
 {
     $got_flat = var_export($got_struct, true);
