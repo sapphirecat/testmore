@@ -42,6 +42,7 @@
 header('Content-Type: text/plain');
 register_shutdown_function('_test_end');
 
+global $_no_plan, $_num_failures, $_num_skips, $_test_num;
 $_no_plan = FALSE;
 $_num_failures = 0;
 $_num_skips = 0;
