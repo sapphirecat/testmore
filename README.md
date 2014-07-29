@@ -1,3 +1,27 @@
+DANGER
+======
+
+API Break
+---------
+
+The `testmore.php` script in _this_ repository (sapphirecat/testmore) has **an
+API break.**  Skipped tests are handled differently than they are in the
+upstream fork.  (I was young and naïve.)
+
+If you **want** the current behavior—which is considered to be
+[broken](https://github.com/sapphirecat/testmore/issues/4)—then you should
+copy it into your project, and not rely on this one remaining the same, nor
+available forever on github.  Skip behavior MAY be changed at any time.
+
+
+Alternative Package
+-------------------
+
+If you’re starting a _new_ set of tests for a project, or just starting a new
+project, then you should try [PHPUnit](https://packagist.org/packages/phpunit/phpunit)
+instead.  It’s far better supported than this ever will be.
+
+
 Test::More for PHP
 ==================
 
